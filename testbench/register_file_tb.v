@@ -19,7 +19,7 @@ module register_file_tb;
     read_reg2=0;
     clk = 0;
     write_enable = 0;
-    $monitor("time=%0t we=%b write_reg=%b write_data=%d read1=%d read2=%d",
+    $monitor("time=%0t write_enable=%b write_reg=%b write_data=%d read1=%d read2=%d",
          $time, write_enable, write_reg, write_data, read_data1, read_data2);
 
     #10 write_enable = 1;
