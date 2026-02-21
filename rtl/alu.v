@@ -37,6 +37,11 @@ module alu(
            4'b0110: result = ~(a & b); 
            4'b0111: result = ~(a | b); 
            4'b1000: result = b; 
+           4'b1001: begin
+                temp = a - b;
+                result = temp[7:0];   
+                carry_flag = temp[8];
+                end
          default:result=8'b00000000;
     endcase 
     end
