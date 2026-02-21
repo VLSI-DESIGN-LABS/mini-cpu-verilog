@@ -37,7 +37,7 @@ initial begin
 // MOV R5,R3
 #10 instruction = 16'b1000_101_011_000_000;
 
-// CMP R1,R2  (write_enable should be 0)
+// CMP R1,R2, write_enable==0
 #10 instruction = 16'b1001_000_001_010_000;
 
 #20 $finish;
